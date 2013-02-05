@@ -1,3 +1,13 @@
+## Installation
+
+Download the source and run...
+
+    npm install . -g
+
+Then you can run the server by calling...
+
+    liveunits /dir/to/src,/dir/to/test
+
 # Next
 
 Next step is to have the browser return the unit test results via ajax to the
