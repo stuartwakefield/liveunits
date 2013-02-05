@@ -18,6 +18,14 @@ tester.addTest("fibonacci", {
 	
 	testFifthIsThree: function() {
 		assertion.areEqual(3, fibonacci(4));
+	},
+	
+	testFifthtieth: function() {
+		assertion.areEqual(12586269025, fibonacci(50));
+	},
+	
+	testSeventieth: function() {
+		assertion.areEqual(190392490709135, fibonacci(70));
 	}
 	
 });
