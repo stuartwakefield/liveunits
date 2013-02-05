@@ -1,0 +1,12 @@
+{ "name" :   
+	"liveunits"
+, "author" : 
+ 	"Stuart Wakefield <me@stuartwakefield.co.uk>"
+, "description" :
+ 	"Runs JavaScript Unit Tests live"
+, "version" :
+ 	"0.0.0"
+, "main" :
+ 	"lib/liveunits"
+, "bin" :
+	"bin/liveunits" }
