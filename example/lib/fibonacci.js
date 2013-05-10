@@ -1,3 +1,5 @@
+module.exports = fibonacci;
+
 function fibonacci(n) {
 	if(n < 2) {
 		return n;
