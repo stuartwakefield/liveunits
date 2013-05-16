@@ -11,13 +11,19 @@ ul.nostyle {
 	margin: 0;
 }
 
-/* Keeps the lists of items constricted
-   to their inline width, rather than
-   display block which will stretch out
-   the the width of the parent container
-*/
 .shrinkwrap {
+
+	/* Keeps the lists of items constricted
+	   to their inline width, rather than
+	   display block which will stretch out
+	   the the width of the parent 
+	   container */
 	display: inline-block;
+	
+	/* Collapses the width of the container
+	   to the width of the parent container 
+	   when the parent container is smaller 
+	   than the contents */
 	max-width: 100%;
 }
 
@@ -33,10 +39,21 @@ ul.nostyle {
 }
 
 .success .count {
-	color: #3D3836; /* Non RGBA supporting browsers */
+
+	/* Fallback for non RGBA supporting 
+	   browsers, the color is the color
+	   reported by the Fireworks 
+	   eyedropper tool */
+	color: #3D3836; 
+	
+	/* #EEE with 20% opacity */
 	color: rgba(238, 238, 238, 0.2);
 }
 
+/* The icons are sized 16 x 16 for the
+   regular small icon and 64 x 64 for
+   the big icon. The big icon is to be
+   used on the main test summary */
 .fail .icon {
 	background: url("icon_fail_16.png");
 }
