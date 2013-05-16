@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background: #110A08;
+				font: 11px / 20px "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+				color: #EEE;
+				margin: 40px;
+			}
+			
+			ul.nostyle {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.fail {
+				color: #F30;
+				font-style: italic;
+			}
+			.icon {
+				float: left;
+				width: 16px;
+				height: 16px;
+				margin: 2px;
+			}
+			
+			.success .count {
+				color: #3D3836; /* Non RGBA supporting browsers */
+				color: rgba(238, 238, 238, 0.2);
+			}
+			
+			.fail .icon {
+				background: url("icon_fail_16.png");
+			}
+			.fail .big-icon {
+				background: url("icon_fail_64.png");
+			}
+			.success .icon {
+				background: url("icon_success_16.png");
+			}
+			.success .big-icon {
+				background: url("icon_success_64.png");
+			}
+			
+			.icon {
+				margin-right: 7px;
+			}
+			
+			.count {
+				float: right;
+				margin-left: 5px;
+			}
+			
+			.suite {
+				display: block;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+			
+			ul.shrinkwrap {
+				display: inline-block;
+				max-width: 100%;
+			}
+			
+			.col {
+				float: left;
+				width: 33%;
+			}
+			
+			.result {
+				height: 20px;
+				text-overflow: hidden;
+				overflow: hidden;
+				margin-right: 10px;
+			}			
+			
+		</style>
+	</head>
+	<body>
+		<div id="suite-list-view">
+			<div class="col">
+				<ul class="nostyle shrinkwrap">
+					<li class="result fail" title="com.example.ws.WebService">
+						<span class="icon"></span>
+						<span class="count">1 Failure</span>
+						<span class="suite">com.example.ws.WebService</span>
+					</li>
+					<li class="result success" title="com.example.ws.Authentication">
+						<span class="icon"></span>
+						<span class="count">10 Tests</span>
+						<span class="suite">com.example.ws.Authentication</span>
+					</li>
+					<li class="result success" title="com.example.ws.RequestSigner">
+						<span class="icon"></span>
+						<span class="count">14 Tests</span>
+						<span class="suite">com.example.ws.RequestSigner</span>
+					</li>
+					<li class="result success" title="com.example.ws.AccessKey">
+						<span class="icon"></span>
+						<span class="count">3 Tests</span>
+						<span class="suite">com.example.ws.AccessKey</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul class="nostyle shrinkwrap">
+					<li class="result success" title="com.example.ws.AccessSecret">
+						<span class="icon"></span>
+						<span class="count">5 Tests</span>
+						<span class="suite">com.example.ws.AccessSecret</span>
+					</li>
+					<li class="result success" title="com.example.ws.Request">
+						<span class="icon"></span>
+						<span class="count">22 Tests</span>
+						<span class="suite">com.example.ws.Request</span>
+					</li>
+					<li class="result success" title="com.example.ws.Client">
+						<span class="icon"></span>
+						<span class="count">10 Tests</span>
+						<span class="suite">com.example.ws.Client</span>
+					</li>
+					<li class="result fail" title="com.example.ws.ClientCookie">
+						<span class="icon"></span>
+						<span class="count">3 Failures</span>
+						<span class="suite">com.example.ws.ClientCookie</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul class="nostyle shrinkwrap">
+					<li class="result success" title="com.example.ws.Signature">
+						<span class="icon"></span>
+						<span class="count">14 Tests</span>
+						<span class="suite">com.example.ws.Signature</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="test-list-view">
+		
+		</div>
+	</body>
+</html>
